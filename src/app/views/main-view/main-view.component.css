@@ -1,0 +1,10 @@
+.app-toolbar-top {
+    display: block;
+    min-height: 50px;
+}
+
+.router {
+    display: block;
+    margin-top: .3em;
+    padding-top: 4em;
+}

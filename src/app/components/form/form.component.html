@@ -1,0 +1,32 @@
+<div class="tile">
+
+    <form [formGroup]="form" (submit)="onSubmit()">
+
+        <mat-form-field appearance="fill">
+            <mat-label>Enter a Name</mat-label>
+            <input matInput placeholder="Ipsum McLorem" [formControl]="form.controls.name" required>
+            <mat-error *ngIf="form.controls.name.invalid">
+                <p *ngIf="form.controls.name.errors.required">
+                    Name is required.
+                </p>
+
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Phone number</mat-label>
+            <input matInput placeholder="+21223412344" [formControl]="form.controls.tel" required>
+            <mat-error *ngIf="form.controls.tel.invalid">
+                <p *ngIf="form.controls.tel.errors.required">
+                    Phone Number is required
+                </p>
+            </mat-error>
+        </mat-form-field>
+
+
+
+        <button type="submit" color="primary" mat-button [disabled]="form.invalid">Submit</button>
+
+
+    </form>
+</div>

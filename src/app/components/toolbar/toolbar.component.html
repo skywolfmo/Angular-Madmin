@@ -1,0 +1,9 @@
+<mat-toolbar color="secondary" role="heading">
+    <button mat-icon-button (click)="clickMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span *ngFor="let t of title">
+      <!-- <button mat-button [routerLink]="[ './' + t ]">{{ t | titlecase }}</button> | -->
+      <button mat-button>{{ t | titlecase }}</button> |
+    </span>
+</mat-toolbar>

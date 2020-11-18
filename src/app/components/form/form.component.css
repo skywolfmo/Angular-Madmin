@@ -1,0 +1,9 @@
+.tile {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}

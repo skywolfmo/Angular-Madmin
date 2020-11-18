@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+}
+
+.buttons {
+    /* padding-top: 2em; */
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.mat-button.mat-green {
+    background-color: #5ec982c5;
+}
+
+.tile {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+
+/* td,
+    th {
+      width: 25%;
+    } */
